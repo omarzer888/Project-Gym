@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Gym</title>
+    <script>
+        (function() {
+          const savedColor = localStorage.getItem("themeColor");
+          if (savedColor) {
+            document.documentElement.style.setProperty("--bleu-ciel", savedColor);
+          }
+        })();
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="power10">
+        <div class="navbar10">
+            <a href="index.html"><h1>power<span> gym</span></h1></a>
+            <div class="list10">
+                <a href="index.html" >home</a>
+                <a href="ourpro.html">our process</a>
+                <a href="ourtrain.html">our trainers</a>
+                <a href="proteines.html">proteines</a>
+                <a href="machines.html">machines</a>
+                <a href="pricing.html">pricing</a>
+                <a href="contact.html">contact us</a>
+                <div class="cart-icon10">
+                <i class="bi bi-cart4" id=""></i>
+                <span class="">0</span>
+                </div>
+                <button><i class="bi bi-sun-fill" id="mode"></i></button>
+                <button id="color" class="theme-btn">
+                    <i class="bi bi-palette-fill"></i>
+                </button>
+                <a href="login.html" class="login10">login</a>
+            </div>
+        </div>
+        <div class="loginn">
+            <form action="teste/index.php" method="POST">
+                <h1>login</h1>
+                <div class="input-box">
+                    <input type="text"placeholder="USERNAME" id="email">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text"placeholder="PASSWORD" id="pass">
+                    <i class="bi bi-lock-fill"></i>
+                </div>
+                <button type="submit" class="btn">login</button>
+            </form>
+        </div>
+    </div>
+    
+
+    
+
+
+<script src="script.js"></script>
+</body>
+</html>
