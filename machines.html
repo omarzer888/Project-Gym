@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Gym</title>
+    <script>
+        (function() {
+          const savedColor = localStorage.getItem("themeColor");
+          if (savedColor) {
+            document.documentElement.style.setProperty("--bleu-ciel", savedColor);
+          }
+        })();
+      </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icons/css/all.css">
+</head>
+<body>
+    <div class="power2">
+        <div class="navbar2">
+            <a href="index.html"><h1>power<span> gym</span></h1></a>
+            <div class="list2">
+                <a href="index.html">home</a>
+                <a href="ourpro.html">our process</a>
+                <a href="ourtrain.html">our trainers</a>
+                <a href="proteines.html">proteines</a>
+                <a href="machines.html" class="active">machines</a>
+                <a href="pricing.html">pricing</a>
+                <a href="contact.html">contact us</a>
+                <div class="cart-icon2">
+                <i class="bi bi-cart4" id=""></i>
+                <span class="">0</span>
+                </div>
+                <button><i class="bi bi-sun-fill" id="mode"></i></button>
+                <button id="color" class="theme-btn">
+                    <i class="bi bi-palette-fill"></i>
+                </button>
+                <a href="login.html" class="login2">login</a>
+            </div>
+        </div>
+    </div>
+    <div class="machines">
+        <h3 class="gros">machines</h3>
+        <h1>mastre quality of machines</h1>
+        <div class="movie-list-container">
+            <!-- <h1 class="movie-list-title">new machines</h1> -->
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/velo.jpg" alt="">
+                        <span class="movie-list-item-title">bike personal</span>
+                        <p class="movie-list-item-desc">899$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/tapis.jpg" alt="">
+                        <span class="movie-list-item-title">run personal</span>
+                        <p class="movie-list-item-desc">1999$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/chest.jpg" alt="">
+                        <span class="movie-list-item-title">chest press</span>
+                        <p class="movie-list-item-desc">2199$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/vis avis.jpg" alt="">
+                        <span class="movie-list-item-title">cable crossover</span>
+                        <p class="movie-list-item-desc">2599$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/soulders.jpg" alt="">
+                        <span class="movie-list-item-title">shoulder press</span>
+                        <p class="movie-list-item-desc">1999$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/squat.jpg" alt="">
+                        <span class="movie-list-item-title">squat machine</span>
+                        <p class="movie-list-item-desc">2000$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/lat.png" alt="">
+                        <span class="movie-list-item-title">lat machine</span>
+                        <p class="movie-list-item-desc">1500$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/leg.jpg" alt="">
+                        <span class="movie-list-item-title">leg curl</span>
+                        <p class="movie-list-item-desc">2200$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/legex.jpg" alt="">
+                        <span class="movie-list-item-title">leg extention</span>
+                        <p class="movie-list-item-desc">2000$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/legprss.png" alt="">
+                        <span class="movie-list-item-title">leg press</span>
+                        <p class="movie-list-item-desc">2000$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/lowerback.jpg" alt="">
+                        <span class="movie-list-item-title">lower back</span>
+                        <p class="movie-list-item-desc">1000$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/abdo.jpg" alt="">
+                        <span class="movie-list-item-title">total abdominal</span>
+                        <p class="movie-list-item-desc">1500$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/arm.jpg" alt="">
+                        <span class="movie-list-item-title">arm curl</span>
+                        <p class="movie-list-item-desc">999$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/artis.jpg" alt="">
+                        <span class="movie-list-item-title">rotaty torso</span>
+                        <p class="movie-list-item-desc">1599$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="image/lowrow.jpg" alt="">
+                        <span class="movie-list-item-title">low row</span>
+                        <p class="movie-list-item-desc">2500$</p>
+                         <button class="movie-list-item-button">buy now</button>
+                    </div>
+                </div>
+                <i class="bi bi-caret-right arow"></i>
+            </div>
+
+        </div>
+    </div>
+        <div class="fin">
+            <div class="tokyo">
+                <h1>power<span> gym</span></h1>
+                <h6>Our mission is to accompany you on your journey <br> towards a more active life.
+                 Modi, consectetur.</h6>
+                 <div class="paris">
+                    <i class="bi bi-clock-fill"></i>
+                    <div class="heur">
+                        <div>
+                            <h3>Monday-Friday</h3>
+                            <span>07:00Am-10:00Pm</span>
+                        </div>
+                        <br>
+                        <div>
+                            <h3>Saturday-Sunday</h3>
+                            <span>07:00Am-02:00Pm</span>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="munich">
+                <h3>Our links</h3>
+                <div class="berlin">
+                    <a href="index.html">home</a>
+                    <a href="ourprocess.html">our process</a>
+                    <a href="ourtrainers.html">our trainers</a>
+                    <a href="proteines.html">proteines</a>
+                    <a href="machines.html">machines</a>
+                    <a href="pricing.html">pricing</a>
+                    <a href="contact.html">contact us</a>
+                </div>
+            </div>
+            <div class="marseille">
+                <h3>Contact us</h3>
+                <div class="ciao">
+                <div>
+                    <i class="bi bi-geo-alt"></i>
+                    <p>Maroc, Marrakech - Targa<br>
+                     (Next to Carrefour)</p>
+                </div>
+                <div>
+                    <i class="bi bi-telephone-fill"></i>
+                    <p>Phone: +212 639 619 545<br>
+                    Fax: +212 500 000 000<br></p>
+                </div>
+                <div>
+                    <i class="bi bi-envelope-fill"></i>
+                    <p>Email: omarzergani@gmail.com<br>
+                    Linking: OMAR ZARGANI<br></p>
+                    
+                </div>
+                </div>
+            </div>
+            <div class="roma">
+                <h3>Our newslletre</h3>
+                <div class="lille">
+                    <input type="text" placeholder="ENTRE YOUR EMAIL">
+                    <input type="button" value="Send">
+                </div>
+                <div>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-youtube"></i>
+                </div>
+            </div>
+    
+    
+        </div>
+        <div class="bonus">
+            <p>© 2025 All Rights Reserved - Designed by <span>Zargani Omar</span></p>
+
+        </div>
+        <div class="arrow">
+            <a href="#" class="scrollup" id="scroll-up">
+            <i class="bi bi-caret-up-fill"></i>
+            </a>
+        </div>
+
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
